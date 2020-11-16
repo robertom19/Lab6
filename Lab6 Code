@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Lab6 {
+
+    
+    public static void main(String[] args) {
+        Scanner pnum= new Scanner(System.in);
+        Scanner lnum= new Scanner (System.in);
+        Scanner mnum= new Scanner (System.in);
+        Scanner fnum= new Scanner (System.in);   
+        
+        double ptotal;                                                      //Practice Problems 44 pts
+        System.out.print("Enter your point total for all practice problems:");
+        ptotal = pnum.nextDouble();
+        System.out.println("Practice Problem Total: " + ptotal+"/44");
+        
+        double ltotal;                                                      //Labs  16 pts
+        System.out.println("Enter your point total for all completed labs:");
+        ltotal = lnum.nextDouble();
+        System.out.println("Lab Total: " + ltotal + "/16");
+        
+        double mtotal;                                                      //Midterms 20 pts
+        System.out.println("Enter your point total for both Midterms:");
+        mtotal = mnum.nextDouble();
+        System.out.println("Midterms Total: " + mtotal + "/20");   
+        
+        double ftotal;                                                      //Final 20 pts
+        System.out.println("Enter your point total for the Final Exam:");
+        ftotal = fnum.nextDouble();
+        System.out.println("Final Exam Total: " + ftotal + "/20");  
+        
+
+        
+        double totalgrade = ptotal+ltotal+mtotal+ftotal;                    //This will sum all the inputted values for each category and print.
+        System.out.println("Total Grade for this Course is: " + totalgrade +"/100");
+        
+        
+        
+    //Letter Grade Calculation        
+        if(totalgrade>=90)
+        {
+            System.out.println("You recieve a grade of A.");
+        }
+        else if(totalgrade>=80 && totalgrade<89)
+        {
+           System.out.println("You recieve a grade of B.");
+        } 
+        else if(totalgrade>=70 && totalgrade<79)
+        {
+            System.out.println("You recieve a grade of C.");
+        }
+        else if(totalgrade>=60 && totalgrade<69)
+        {
+            System.out.println("You recieve a grade of D.");
+        }
+        else
+        {
+            System.out.println("You recieve a grade of F.");
+        }
+    //        
+              
+    }
+
+}
